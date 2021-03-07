@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Masters theorem</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="box-1">
+    <div class="head-left" id="head-left">
+      <p>Master's theorem for dividing functions</p>
+      <br />
+      <p>T(n)=a*T(n/b) + f(n)</p>
+    </div>
+    <div class="head-right" id="head-right">
+      <p id="head-right-p1" class="blink">a>=1</p>
+      <p id="head-right-p2" class="blink">b>1</p>
+      <p id="head-right-p3" class="blink">f(n)=Thetha(n^k(logn)^p</p>
+    </div>
+  </section>
+  <div class="head-bottom-button">
+    <button class="button" type="submit" onclick=buttonClicked()>Start</button>
+  </div>
+  <section class="box-2">
+    <div class="case" id="case1">
+      <p>case 1) if log(a(base b)) > k <br />then t.c=<br /> Thetha(n^log(a(base b))</p>
+    </div>
+    <div class="case" id="case2">
+      <p>case 2) if log(a(base b)) = k <br />then,</p>
+    </div>
+    <div class="case" id="case3">
+      <p>case 3) if log(a(base b)) > k <br />then,</p>
+    </div>
+  </section>
+  
+  
+  <!--box3--->
+  
+  
+  <section class="box-3">
+    <div class="case case-sub" id="case2-1">
+       <p>case 2.1) p>-1<br />then t.c=<br /> Thetha(n^k log((p+1)(base n)))</p>
+    </div>
+    <div class="case case-sub" id="case2-2">
+       <p>case 2.2) if p=-1<br />then t.c = <br/>Theta(n^k log(log n))</p>
+    </div>
+    <div class="case case-sub" id="case2-3">
+       <p>case 2.3) if p<-1 <br />then, t.c= <br/>Theta(n^k)</p>
+    </div>
+    <div class="case case-sub" id="case3-1">
+        <p>case 3.1) if p>=0 <br />then t.c=<br /> Thetha(n^k log(p(base n))</p>
+    </div>
+    <div class="case case-sub" id="case3-2">
+        <p>case 3.2) if p<0 <br />then, t.c=</br>Theta(n^k)</p>
+    </div>
+  </section>
+  
+  
+  <!----box 4----->
+  <section class="box-4">
+    <div class="case box-case  " id="case1-eg">
+       <p> eg:-  for [2T(n/2)+1]<br />t.c=Theta(n)</p>
+    </div>
+    <div class="case box-case " id="case2-1-eg">
+       <p>eg:- for [2T(n/2)+nlogn <br />t.c=theta(nlog(2(base n)))</p>
+    </div>
+    <div class="case box-case " id="case2-2-eg">
+       <p>eg:- for [2T(n/2)+n/logn <br />t.c=theta(nlog(logn))</p>
+    </div>
+    <div class="case box-case " id="case2-3-eg">
+        <p>eg:- for [2T(n/2)+n/logn^2]<br />t.c=n</p>
+    </div>
+    <div class="case box-case " id="case3-1-eg">
+        <p>eg:- for [2T(n/2)+n^3logn]<br />t.c=n^3logn</p>
+    </div>
+    <div class="case box-case" id="case3-2-eg">
+      <p>eg:- for[2T(n/2)+n^3]<br />t.c=n^3</p>
+    </div>
+  </section>
+  
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>
